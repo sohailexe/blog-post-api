@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-// const controller= require("../countrollers/controller")
+const controller= require("../countrollers/controller")
 
 
 
@@ -8,7 +8,7 @@ const router = express.Router();
 //Write your code here//
 
 //CHALLENGE 1: GET All posts
-
+router.get("/posts",controller.getPosts)
 //CHALLENGE 2: GET a specific post by id
 
 //CHALLENGE 3: POST a new post

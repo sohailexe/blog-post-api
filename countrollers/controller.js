@@ -1,6 +1,12 @@
-let jokes= require("../data/jokes")
+let posts= require("../data/posts")
 const { validationResult } = require('express-validator');
 
-exports.getH = (req,res)=>{
+exports.getPosts = (req,res)=>{
+    res.status(200).json({
+        message: "success",
+        data:posts
+    })
+}
+exports.getPosts = (req,res)=>{
 
 }
